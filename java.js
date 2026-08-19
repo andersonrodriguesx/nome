@@ -10,7 +10,7 @@ formulario.addEventListener("submit", function(event) {
     const email = document.getElementById("email").value;
     const whatsapp = document.getElementById("whatsapp").value;
     const momento = document.getElementById("momento").value;
-    const mensagem = document.getElementById("mensagem").value;
+    const mensagem1 = document.getElementById("mensagem").value;
 
     
     const dados = {
@@ -18,14 +18,14 @@ formulario.addEventListener("submit", function(event) {
         email: email,
         whatsapp: whatsapp,
         momento: momento,
-        mensagem: mensagem
+        mensagem1: mensagem1
     };
 
     const nomeCliente = dados.nome;
     const emailCliente = dados.email;
     const whatsappCliente = dados.whatsapp;
     const momentoCliente = dados.momento;
-    const mensagemCliente = dados.mensagem;
+    const mensagemCliente = dados.mensagem1;
 
     const mensagem = `
 Olá!
