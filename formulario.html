@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Kayllane<br>Ashley</a>
+            <a href="index.html">Home</a>
+            <a href="">Serviços</a>
+            <a href="formulario.html">Formulário</a>
+            <a href="sobremim.html">Sobre mim</a>
+            <a class="botao botao-header" href="https://wa.me/557181988560?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20conversa%20com%20voc%C3%AA" target="_blank" rel="noopener noreferrer">
+    Agende uma conversa
+</a>
+        </nav>
+    </header>
+    <main>
+        <section class="pagina-formulario">
+            <div class="formulario-apresentacao">
+                <p class="texto-acima">Primeiro contato</p>
+
+                <h1>
+                    Vamos conversar sobre o seu momento?
+                </h1>
+
+                <p>
+                    Preencha o formulário e entrarei em contato para entendermos juntas como posso apoiar sua jornada.
+                </p>
+            </div>
+
+            <form class="formulario-contato" action="#" method="post">
+                <div class="campo-formulario">
+                    <label for="nome">
+                        Nome completo <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">
+                        E-mail <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="whatsapp">
+                        WhatsApp <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="momento">
+                        Em que momento você está?
+                    </label>
+
+                    <select id="momento" name="momento">
+                        <option value="">Selecione uma opção</option>
+                        <option value="gestacao">Gestação</option>
+                        <option value="parto">Próxima ao parto</option>
+                        <option value="pos-parto">Pós-parto</option>
+                        <option value="outro">Outro momento</option>
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensagem">
+                        Conte um pouco sobre você
+                    </label>
+
+                    <textarea id="mensagem" name="mensagem" rows="6"></textarea>
+                </div>
+
+                <p class="campos-obrigatorios">
+                    <span aria-hidden="true">*</span> Campos obrigatórios
+                </p>
+
+                <button type="submit" class="botao botao-enviar">
+                    Enviar mensagem
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+
+            <section class="rodape-apresentacao" aria-labelledby="titulo-rodape">
+                <h2 id="titulo-rodape">Doula</h2>
+
+                <p>
+                    Meu papel é orientá-la, defendê-la e apoiá-la para que sua experiência de parto reflita seus valores e necessidades.
+                </p>
+
+                <nav class="redes-sociais" aria-label="Redes sociais">
+                    <a href="#" aria-label="Facebook">
+                        <img src="assets/facebook.png" alt="">
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <img src="assets/instagram.png" alt="">
+                    </a>
+
+                    <a href="mailto:kayllaneashley54@email.com" aria-label="Enviar e-mail">
+                        <img src="assets/o-email.png" alt="">
+                    </a>
+                </nav>
+            </section>
+
+            <section class="rodape-contato" aria-labelledby="titulo-contato">
+                <h3 id="titulo-contato">Contato</h3>
+
+                <address>
+                    <p>
+                        Telefone:
+                        <a href="tel:+557181988560">
+                            +55 71 8198-8560
+                        </a>
+                    </p>
+
+                    <p>
+                        E-mail:
+                        <a href="mailto:kayllaneashley54@email.com">
+                            kayllaneashley54@email.com
+                        </a>
+                    </p>
+                </address>
+            </section>
+
+            <nav class="rodape-juridico" aria-labelledby="titulo-juridico">
+                <h3 id="titulo-juridico">Jurídico</h3>
+
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+            </nav>
+
+        </div>
+
+        <div class="rodape-final">
+            <small>
+                © 2026 Kayllane Ashley. Todos os direitos reservados.
+            </small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
