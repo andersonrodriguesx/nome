@@ -2,24 +2,27 @@ const formulario = document.getElementById("formulario");
 
 formulario.addEventListener("submit", function(event) {
 
-    // Impede o formulário de recarregar a página
+    
     event.preventDefault();
 
-    // Capturando os valores digitados
+    
     const nome = document.getElementById("nome").value;
-    const idade = document.getElementById("idade").value;
-    const peso = document.getElementById("peso").value;
+    const email = document.getElementById("email").value;
+    const whatsapp = document.getElementById("whatsapp").value;
+    const momento = document.getElementById("momento").value;
+    const mensagem = document.getElementById("mensagem").value;
 
-    // "Dicionário" do Python -> objeto no JavaScript
+    
     const dados = {
         nome: nome,
-        idade: idade,
-        peso: peso
+        email: email,
+        whatsapp: whatsapp,
+        momento: momento,
+        mensagem: mensagem
     };
 
-    // Pegando os dados do objeto
     const nomeCliente = dados.nome;
-    const idadeCliente = dados.idade;
+    const emailCliente = dados.email;
 
     // Se peso estiver vazio, usamos "Não informado"
     const pesoCliente = dados.peso || "Não informado";
@@ -34,14 +37,14 @@ Peso: ${pesoCliente}
     `;
 
     // Número que receberá a mensagem
-    const telefone = "55718198-8560";
+    const telefone = "5571999999999";
 
     // Preparando a mensagem para a URL
     const mensagemFormatada = encodeURIComponent(mensagem);
 
     // Criando link do WhatsApp
-    const url = https: //wa.me/${telefone}?text=${mensagemFormatada};
+    const url = `https://wa.me/${telefone}?text=${mensagemFormatada}`;
 
-        // Abrindo WhatsApp
-        window.open(url, "_blank");
+    // Abrindo WhatsApp
+    window.open(url, "_blank");
 });
