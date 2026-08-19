@@ -23,28 +23,25 @@ formulario.addEventListener("submit", function(event) {
 
     const nomeCliente = dados.nome;
     const emailCliente = dados.email;
+    const whatsappCliente = dados.whatsapp;
+    const momentoCliente = dados.momento;
+    const mensagemCliente = dados.mensagem;
 
-    // Se peso estiver vazio, usamos "Não informado"
-    const pesoCliente = dados.peso || "Não informado";
-
-    // Montando a mensagem
     const mensagem = `
 Olá!
 
 Nome: ${nomeCliente}
-Idade: ${idadeCliente}
-Peso: ${pesoCliente}
+Email: ${emailCliente}
+Whatsapp: ${whatsappCliente}
+Momento: ${momentoCliente}
+Mensagem: ${mensagemCliente}
     `;
 
-    // Número que receberá a mensagem
-    const telefone = "5571999999999";
+    const telefone = "5571985218376";
 
-    // Preparando a mensagem para a URL
     const mensagemFormatada = encodeURIComponent(mensagem);
 
-    // Criando link do WhatsApp
     const url = `https://wa.me/${telefone}?text=${mensagemFormatada}`;
 
-    // Abrindo WhatsApp
     window.open(url, "_blank");
 });
